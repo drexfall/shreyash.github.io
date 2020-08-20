@@ -1,0 +1,144 @@
+body {
+    padding:0;
+    margin: 0;
+    height: 10000px;
+    background-color: #000;
+  }
+
+/*banner*/
+
+.top-banner{
+    padding: 0pt;
+    margin: 0pt;
+    scroll-padding: 0;
+    display:inline-block;
+    position: fixed;
+    height:10%;
+    width:100%;
+    background-color: #000;
+    z-index:2;
+    opacity:1;
+    }
+.top-banner.spacer{
+    color:white;
+    width:75%;
+    position: relative;
+    }
+
+.top-banner.underline{
+    background-color:black;
+    color: white;
+    font-size: 15pt;
+    padding-right: 5pt;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    border-width: 0pt;
+    position: relative;
+    width:10%;
+    height: 95%;
+    cursor:pointer;
+    visibility: visible;
+}
+
+.top-banner.underline::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 20%;
+    left: 0;
+    margin:0;
+    padding: 0;
+    background: linear-gradient(to right, #fff 50%,#000 50%);
+    background-size: 250%;
+    background-position: 100% 0;
+    transition: all 0.4s ease-in-out;
+    overflow: hidden;
+    }
+.top-banner.underline:hover::before{
+        background-position: 0 0;
+        }
+
+.landing{
+    height:95%;
+    object-fit: cover;
+    z-index:1;
+    position:fixed;
+    background-color: black;
+    
+}
+.landing .landing-image{
+    object-fit: cover;
+    width:100%;
+    min-height:90%;
+    overflow: hidden;
+}
+
+.landing-image.one{
+    display: block;
+}
+.landing-image.one{
+    display: none;
+}
+.landing-image.one{
+    display: none;
+}
+@keyframes fade-in{
+    0%{opacity:0;}
+    100%{opacity:1;}
+}
+
+@keyframes fade-out{
+    0%{opacity:1;}
+    100%{opacity:0;}
+}
+
+/*button border*/
+button.border{
+    background-color:rgb(0, 0, 0);
+    color: seashell;
+    font-size: 15pt;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    border-style: solid;
+    border-width: 5pt;
+    border-color: black;
+    height: 50pt;
+    width: 100pt;
+    transition: ease-in-out;
+    transition-duration: 200ms;
+    cursor:pointer;
+}
+button.border:hover{
+    background-color:rgb(255, 255, 255);
+    border-width: 5pt;
+    color: black;
+    border-color: black;
+    transition: ease-in-out;
+    transition-duration: 200ms
+}
+/*scroll top button*/
+.scrolltop {
+    display:none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 100%;
+    outline: none;
+    background-color: white;
+    color: #000;
+    cursor: pointer;
+    padding: 15px 20px;
+    opacity:0;
+    z-index:99;
+    transition: 0.3s ease-in-out;
+  }
+.scrolltop:hover {
+    box-shadow: 0 0 10px #fff;
+    transition: 0.3s ease-in-out;
+  }
+  
+.content{
+    position: absolute;
+    padding-top: 90%;
+    }
