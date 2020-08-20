@@ -61,26 +61,25 @@ body {
 .landing{
     height:95%;
     object-fit: cover;
-    z-index:1;
-    position:fixed;
+
+    position: fixed;
     background-color: black;
+
     
 }
-.landing .landing-image{
+.landing img{
     object-fit: cover;
     width:100%;
     min-height:90%;
-    overflow: hidden;
 }
-
-.landing-image.one{
+.landing img.one{
+    display: none;
+}
+.landing img.two{
+    display: none;
+}
+.landing img.three{
     display: block;
-}
-.landing-image.one{
-    display: none;
-}
-.landing-image.one{
-    display: none;
 }
 @keyframes fade-in{
     0%{opacity:0;}
