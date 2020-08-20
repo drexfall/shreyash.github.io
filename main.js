@@ -28,4 +28,3 @@ async function slideshow(){
   }
   slideshow()
 }
-setTimeout(slideshow,2000)
