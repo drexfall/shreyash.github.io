@@ -61,17 +61,17 @@ body {
 .landing{
     height:95%;
     object-fit: cover;
-
+    z-index:1;
     position: fixed;
     background-color: black;
-
-    
 }
 .landing img{
     object-fit: cover;
     width:100%;
     min-height:90%;
+    overflow: hidden;
 }
+
 .landing img.one{
     display: none;
 }
@@ -79,7 +79,7 @@ body {
     display: none;
 }
 .landing img.three{
-    display: block;
+    display: none;
 }
 @keyframes fade-in{
     0%{opacity:0;}
